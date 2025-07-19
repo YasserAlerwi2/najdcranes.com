@@ -35,6 +35,9 @@ export async function generateMetadata({ params }: Props) {
         'en': '/en',
       },
     },
+    icons: {
+      icon: '/logo.png'
+    },
   };
 }
 
