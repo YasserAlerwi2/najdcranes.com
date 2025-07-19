@@ -1,0 +1,112 @@
+{
+  "navigation": {
+    "home": "Home",
+    "about": "About Us",
+    "services": "Our Services",
+    "equipment": "Equipment",
+    "projects": "Projects",
+    "contact": "Contact",
+    "language": "Language"
+  },
+  "hero": {
+    "title": "Modern Najd Cranes",
+    "subtitle": "Leading Construction Equipment Rental Company",
+    "description": "Providing comprehensive lifting solutions and construction efficiency for your project success. Extensive experience and specialized team to ensure swift and efficient completion of your work.",
+    "cta": "Get Quote",
+    "phone": "Call Us Now"
+  },
+  "about": {
+    "title": "About Us",
+    "subtitle": "Leading institution in construction equipment rental",
+    "description": "Modern Najd Cranes is a leading institution in construction equipment and crane rental in Saudi Arabia. We provide comprehensive and advanced solutions for all construction project needs, maintenance work, and construction activities.",
+    "experience": "Years of Experience",
+    "projects": "Completed Projects",
+    "equipment": "Modern Equipment",
+    "clients": "Satisfied Clients"
+  },
+  "services": {
+    "title": "Our Distinguished Services",
+    "subtitle": "We provide a comprehensive and advanced range for all construction project and maintenance work needs",
+    "crane": {
+      "title": "Crane Rental",
+      "description": "Modern cranes with different sizes and capacities for all types of projects"
+    },
+    "manlift": {
+      "title": "Man Lift",
+      "description": "Safe lifting platforms to reach high places easily and safely"
+    },
+    "scissorlift": {
+      "title": "Scissor Lift",
+      "description": "Scissor lifting platforms ideal for indoor and outdoor work"
+    },
+    "forklift": {
+      "title": "Forklift",
+      "description": "Efficient equipment for lifting and transporting goods"
+    },
+    "boomtruck": {
+      "title": "Boom Truck",
+      "description": "Trucks equipped with mobile cranes for various projects"
+    },
+    "telehandler": {
+      "title": "Telehandler",
+      "description": "Multi-purpose equipment for lifting and loading"
+    }
+  },
+  "projects": {
+    "title": "Our Projects",
+    "subtitle": "We take pride in our achievements in serving our valued clients",
+    "step1": {
+      "title": "Riyadh Province Projects",
+      "description": "Various projects in the capital"
+    },
+    "step2": {
+      "title": "Modern Cities Projects",
+      "description": "Projects in NEOM, Qiddiya and new cities"
+    },
+    "step3": {
+      "title": "Factory Construction Projects",
+      "description": "First responsibilities within Saudi Arabia"
+    },
+    "step4": {
+      "title": "New Al-Hilal Club Complex Project",
+      "description": "Massive sports project in Riyadh"
+    }
+  },
+  "equipment": {
+    "title": "Our Equipment",
+    "subtitle": "Latest equipment and technologies to ensure the best results"
+  },
+  "contact": {
+    "title": "Contact Us",
+    "subtitle": "We are here to serve you 24/7",
+    "phone": "Phone",
+    "email": "Email",
+    "address": "Address",
+    "form": {
+      "title": "Contact Form",
+      "name": "Name",
+      "namePlaceholder": "Enter your name",
+      "email": "Email",
+      "emailPlaceholder": "Enter your email",
+      "phone": "Phone Number",
+      "phonePlaceholder": "Enter your phone number",
+      "service": "Service Type",
+      "servicePlaceholder": "Select a service",
+      "message": "Message",
+      "messagePlaceholder": "Write your message",
+      "submit": "Send Message"
+    }
+  },
+  "footer": {
+    "description": "Modern Najd Cranes - Your trusted partner in construction equipment and crane rental",
+    "quickLinks": "Quick Links",
+    "services": "Our Services",
+    "contact": "Contact Information",
+    "rights": "All Rights Reserved"
+  },
+  "meta": {
+    "title": "Modern Najd Cranes - Construction Equipment & Crane Rental",
+    "description": "Leading company in construction equipment and crane rental in Saudi Arabia. We provide cranes, man lifts, scissor lifts, forklifts and all modern construction equipment.",
+    "keywords": "crane rental, construction equipment, man lift, scissor lift, forklift, Saudi Arabia cranes, construction machinery"
+  }
+}
