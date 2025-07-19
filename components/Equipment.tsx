@@ -83,7 +83,7 @@ export default function Equipment() {
               <div className="relative h-64 overflow-hidden">
                 <img
                   src={item.image}
-                  alt={`${item.name} ${isArabic ? 'تأجير رافعات، تأجير معدات ثقيلة، رافعة، مان ليفت، سيزر ليفت، بوم ترك، تيليهاندلر، خدمات رفع، إيجار معدات البناء، شركة رافعات في السعودية' : 'crane rental, heavy equipment rental, crane, man lift, scissor lift, boom truck, telehandler, lifting services, construction equipment hire, crane company in Saudi Arabia'}`} loading="lazy"
+                  alt={`${item.name} ${isArabic ? 'تأجير رافعات، تأجير معدات ثقيلة، رافعة، مان ليفت، سيزر ليفت، بوم ترك، تيليهاندلر، خدمات رفع، إيجار معدات البناء، شركة رافعات في السعودية' : 'crane rental, heavy equipment rental, crane, man lift, scissor lift, boom truck, telehandler, lifting services, construction equipment hire, crane company in Saudi Arabia'}`}
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
@@ -113,7 +113,7 @@ export default function Equipment() {
                 
                 <div className="flex items-center justify-between">
                   <a
-                    href={`https://wa.me/966568810306?text=${encodeURIComponent(isArabic ? 'أرغب في استئجار ' + item.name : 'I would like to rent ' + item.nameEn)}`}
+                    href={`https://wa.me/966555403290?text=${encodeURIComponent(isArabic ? 'أرغب في استئجار ' + item.name : 'I would like to rent ' + item.nameEn)}`}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center px-4 py-2 border border-green-600 text-green-600 rounded-md text-sm font-medium hover:bg-green-600 hover:text-white transition-colors"
@@ -123,7 +123,7 @@ export default function Equipment() {
                   </a>
                   
                   <a
-                    href="tel:+966568810306"
+                    href="tel:+966555403290"
                     className="inline-flex items-center px-4 py-2 bg-orange-600 text-white rounded-md text-sm font-medium hover:bg-orange-700 transition-colors"
                   >
                     {isArabic ? 'اتصل الآن' : 'Call Now'}

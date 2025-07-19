@@ -36,7 +36,7 @@ export async function generateMetadata({ params }: Props) {
       },
     },
     icons: {
-      icon: '/logo.png'
+      icon: '/رفعات_نجد_الحديثه.png'
     },
   };
 }

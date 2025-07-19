@@ -85,15 +85,15 @@ export default function Header() {
             </Button>
             
             <a
-              href="tel:+966568810306"
+              href="tel:+966555403290"
               className="flex items-center space-x-2 text-orange-600 hover:text-orange-700"
             >
               <Phone className="h-4 w-4" />
-              <span className="text-sm font-medium">+966568810306</span>
+              <span className="text-sm font-medium">+966555403290</span>
             </a>
             
             <a
-               href="https://wa.me/966568810306"
+               href="https://wa.me/966555403290"
                target="_blank"
                rel="noopener noreferrer"
                className="inline-flex items-center h-9 px-3 rounded-md bg-green-500 hover:bg-green-600 text-white text-sm font-medium"
@@ -144,15 +144,15 @@ export default function Header() {
               </Button>
               
               <a
-                href="tel:+966568810306"
+                href="tel:+966555403290"
                 className={cn("flex items-center px-3 py-2 text-orange-600 hover:text-orange-700", locale === 'ar' && 'flex-row-reverse') }
               >
                 <Phone className="h-4 w-4 mr-2" />
-                +966568810306
+                +966555403290
               </a>
               
               <a
-                 href="https://wa.me/966568810306"
+                 href="https://wa.me/966555403290"
                  target="_blank"
                  rel="noopener noreferrer"
                  className="w-full mt-2 inline-flex items-center justify-center h-9 rounded-md bg-green-500 hover:bg-green-600 text-white text-sm font-medium"

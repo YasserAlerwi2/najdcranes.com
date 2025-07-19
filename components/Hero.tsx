@@ -67,7 +67,7 @@ export default function Hero() {
         {/* CTA Buttons */}
         <div className="flex flex-row flex-wrap gap-4 justify-center items-center">
           <a
-            href="https://wa.me/+966568810306"
+            href="https://wa.me/+966555403290"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center px-6 py-3 md:px-8 md:py-4 bg-green-500 hover:bg-green-600 text-white rounded-md text-base md:text-lg font-semibold transition-colors"
@@ -77,7 +77,7 @@ export default function Hero() {
           </a>
           
           <a
-            href="tel:+966568810306"
+            href="tel:+966555403290"
             className="inline-flex items-center px-4 py-2 md:px-6 md:py-3 border border-white text-white hover:bg-white hover:text-gray-900 rounded-md text-sm md:text-base font-semibold transition-colors"
           >
             <Phone className={cn("h-5 w-5", isArabic ? "ml-2" : "mr-2")} />
