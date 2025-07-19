@@ -14,7 +14,7 @@ export default function Projects() {
       step: '01',
       title: isArabic ? 'فورمولا 1' : 'Formula 1',
       description: isArabic ? 'وصف بالعربية' : 'Description in English',
-      image: '/projects/مشاريع_رفعات_نجد_الحديثه_رفعات_فورمولا_رفعات_تاجير_رفعات_افضل شركه__تاجير_معدات_ورافعات.jpg'
+      image: '/projects/formula1-1.jpg'
     },
     {
       step: '02',
