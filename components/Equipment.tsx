@@ -113,7 +113,7 @@ export default function Equipment() {
                 
                 <div className="flex items-center justify-between">
                   <a
-                    href={`https://wa.me/966555403290?text=${encodeURIComponent(isArabic ? 'أرغب في استئجار ' + item.name : 'I would like to rent ' + item.nameEn)}`}
+                    href={`https://wa.me/966568810306?text=${encodeURIComponent(isArabic ? 'أرغب في استئجار ' + item.name : 'I would like to rent ' + item.nameEn)}`}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center px-4 py-2 border border-green-600 text-green-600 rounded-md text-sm font-medium hover:bg-green-600 hover:text-white transition-colors"
@@ -123,7 +123,7 @@ export default function Equipment() {
                   </a>
                   
                   <a
-                    href="tel:+966555403290"
+                    href="tel:+966568810306"
                     className="inline-flex items-center px-4 py-2 bg-orange-600 text-white rounded-md text-sm font-medium hover:bg-orange-700 transition-colors"
                   >
                     {isArabic ? 'اتصل الآن' : 'Call Now'}

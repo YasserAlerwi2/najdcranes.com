@@ -147,11 +147,11 @@ export default function Contact() {
                 }
               </p>
               <a
-                href="tel:+966555403290"
+                href="tel:+966568810306"
                 className="inline-flex items-center px-6 py-3 bg-white text-orange-600 rounded-lg font-semibold hover:bg-orange-50 transition-colors"
               >
                 <Phone className={cn("h-5 w-5", isArabic ? "ml-2" : "mr-2")} />
-                +966 55 540 3290
+                +966 56 881 0306
               </a>
             </div>
           </div>

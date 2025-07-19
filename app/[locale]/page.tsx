@@ -63,7 +63,7 @@ export default async function HomePage({
     logo: 'https://najdcranes.com/logo.png',
     contactPoint: {
       '@type': 'ContactPoint',
-      telephone: '+966555403290',
+      telephone: '+966568810306',
       contactType: 'customer service',
       areaServed: 'SA',
       availableLanguage: ['Arabic', 'English']
