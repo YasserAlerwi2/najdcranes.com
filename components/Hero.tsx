@@ -28,12 +28,12 @@ export default function Hero() {
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{
           backgroundImage: `url("${images[current]}")`,
-          filter: 'brightness(0.6)'
+          filter: 'brightness(0.8)'
         }}
       />
       
       {/* Overlay */}
-      <div className="absolute inset-0 bg-gradient-to-r from-blue-900/40 to-orange-900/40" />
+      <div className="absolute inset-0 bg-gradient-to-r from-blue-900/20 to-orange-900/20" />
       
       {/* Content */}
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-12 pb-20 md:pt-32 md:pb-40 text-center">
