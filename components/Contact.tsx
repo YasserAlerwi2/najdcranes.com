@@ -42,7 +42,7 @@ export default function Contact() {
                   </label>
                   <input
                     type="text"
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg text-black focus:ring-2 focus:ring-orange-500 focus:border-transparent"
                     placeholder={t('form.namePlaceholder')}
                   />
                 </div>
@@ -52,7 +52,7 @@ export default function Contact() {
                   </label>
                   <input
                     type="tel"
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg text-black focus:ring-2 focus:ring-orange-500 focus:border-transparent"
                     placeholder={t('form.phonePlaceholder')}
                   />
                 </div>
@@ -64,7 +64,7 @@ export default function Contact() {
                 </label>
                 <input
                   type="email"
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg text-black focus:ring-2 focus:ring-orange-500 focus:border-transparent"
                   placeholder={t('form.emailPlaceholder')}
                 />
               </div>
@@ -73,7 +73,7 @@ export default function Contact() {
                 <label className="block text-sm font-medium text-gray-700 mb-2">
                   {t('form.service')}
                 </label>
-                <select className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent">
+                <select className="w-full px-4 py-3 border border-gray-300 rounded-lg text-black focus:ring-2 focus:ring-orange-500 focus:border-transparent">
                   <option value="">{t('form.servicePlaceholder')}</option>
                   <option value="crane">{isArabic ? 'رافعات' : 'Cranes'}</option>
                   <option value="manlift">{isArabic ? 'مان ليفت' : 'Man Lift'}</option>
@@ -90,7 +90,7 @@ export default function Contact() {
                 </label>
                 <textarea
                   rows={4}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg text-black focus:ring-2 focus:ring-orange-500 focus:border-transparent"
                   placeholder={t('form.messagePlaceholder')}
                 />
               </div>

@@ -21,12 +21,21 @@ export default function ProjectsGallery() {
       ]
     },
     {
+      name: isArabic ? 'توسعه الحرمين الشريفين مجموعه بن لادن السعوديه' : 'Development of the Two Holy Mosques, Saudi Bin Laden Group',
+      images: [
+        '/projects/رافعات_نجد_الحدثيه_تاجير_معدات_تاجير_رافعات.jpg',
+        '/projects/رافعات_نجد_الحدثيه_تاجير_معدات_تاجير_رافعات1.jpg',
+        '/projects/رافعات_نجد_الحدثيه_تاجير_معدات_تاجير_رافعات3.jpg'
+      ]
+    },
+    {
       name: isArabic ? 'ملعب نادي الهلال الجديد' : 'New Al-Hilal Club Stadium',
       images: [
         '/projects/alhilal-1.jpg',
-        '/projects/alhilal-2.jpg',
+        '/projects/رافعات_نجد_الحدثيه_تاجير_معدات_تاجير_رافعات_الهلال.jpg',
       ]
     },
+    
     {
       name: isArabic ? 'مركز الملك عبدالله المالي' : 'King Abdullah Financial Center',
       images: [
@@ -34,7 +43,15 @@ export default function ProjectsGallery() {
         '/projects/center-2.jpg',
         '/projects/center-3.jpg',
       ]
-    }
+    },
+    {
+      name: isArabic ? 'مشروع الدرعية' : 'Diriyah Project',
+      images: [
+        '/projects/رافعات_نجد_الحدثيه_تاجير_معدات_تاجير_رافعات_رافعات_رافعات.jpg',
+        '/projects/رافعات_نجد_الحدثيه_تاجير_معدات_تاجير_رافعات_مشروع_درعه2.jpg',
+        '/projects/رافعات_نجد_الحدثيه_تاجير_معدات_تاجير_رافعات_مشروع_درعه.jpg'
+      ]
+    },
   ];
 
   const [active, setActive] = useState<{ p: number; i: number } | null>(null);

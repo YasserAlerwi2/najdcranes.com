@@ -143,7 +143,7 @@ export default function Footer() {
               <div className="flex items-center space-x-3">
                 <Mail className="h-5 w-5 text-orange-400 flex-shrink-0" />
                 <a
-                  href="mailto:info@najdcranes.com"
+                  href="mailto:m.c.najd.est@gmail.com"
                   className="text-gray-300 hover:text-orange-400 transition-colors"
                 >
                   m.c.najd.est@gmail.com
