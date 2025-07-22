@@ -1,6 +1,7 @@
 import '../globals.css';
 import { generateStructuredData } from '@/lib/utils';
 import { LocaleProvider } from '../../components/LocaleProvider';
+import { enKeywords, arKeywords } from '@/lib/keywords';
 
 const locales = ['ar', 'en'];
 
@@ -17,9 +18,7 @@ export async function generateMetadata({ params }: Props) {
     description: locale === 'ar' 
       ? 'شركة نجد للرافعات الحديثة - رائدة في مجال خدمات الرافعات والمعدات الثقيلة في المملكة العربية السعودية'
       : 'Modern Najd Cranes Company - Leading provider of crane services and heavy equipment in Saudi Arabia',
-    keywords: locale === 'ar'
-      ? 'رافعات, معدات ثقيلة, شركة نجد, السعودية, خدمات رافعات'
-      : 'cranes, heavy equipment, Najd company, Saudi Arabia, crane services',
+    keywords: locale === 'ar' ? arKeywords : enKeywords,
     openGraph: {
       title: locale === 'ar' ? 'شركة نجد للرافعات الحديثة' : 'Modern Najd Cranes Company',
       description: locale === 'ar' 
@@ -61,10 +60,10 @@ export default async function LocaleLayout({
       ? 'شركة نجد للرافعات الحديثة - رائدة في مجال خدمات الرافعات والمعدات الثقيلة في المملكة العربية السعودية'
       : 'Modern Najd Cranes Company - Leading provider of crane services and heavy equipment in Saudi Arabia',
     url: `https://najdcranes.com/${locale}`,
-    logo: 'https://najdcranes.com/logo.png',
+    logo: 'https://najdcranes.com/رفعات_نجد_الحديثه.png',
     contactPoint: {
       '@type': 'ContactPoint',
-      telephone: '+966-11-1234567',
+      telephone: '+966555403290',
       contactType: 'customer service',
       areaServed: 'SA',
       availableLanguage: ['ar', 'en']
@@ -72,8 +71,8 @@ export default async function LocaleLayout({
     address: {
       '@type': 'PostalAddress',
       addressCountry: 'SA',
-      addressLocality: locale === 'ar' ? 'الرياض' : 'Riyadh',
-      addressRegion: locale === 'ar' ? 'منطقة الرياض' : 'Riyadh Region'
+      addressLocality: locale === 'ar' ? 'جدة' : 'Jeddah',
+      addressRegion: locale === 'ar' ? 'منطقة جدة' : 'Jeddah Region'
     },
     sameAs: [
       'https://www.facebook.com/najdcranes',
