@@ -81,12 +81,45 @@ export default async function LocaleLayout({
     ]
   });
 
+  // SEO JSON-LD graph including services and products
+  const providerName = locale === 'ar' ? 'شركة نجد للرافعات الحديثة' : 'Modern Najd Cranes Company';
+  const serviceTypes = locale === 'ar'
+    ? ['تأجير رافعات','تأجير معدات ثقيلة','تأجير كرين متحرك','تأجير كرين البرج','تأجير كرين الزاحف','تأجير رافعة علوية','تأجير كرين بوابة','تأجير كرين ذاتي التركيب']
+    : ['crane rental','heavy equipment rental','mobile crane rental','tower crane rental','crawler crane rental','overhead crane rental','gantry crane rental','self-erecting crane rental'];
+  const servicesGraph = serviceTypes.map(service => ({
+    '@type': 'Service',
+    serviceType: service,
+    provider: { '@type': 'Organization', name: providerName },
+  }));
+  const equipmentList = [
+    { type: locale === 'ar' ? 'كرين متحرك' : 'Mobile Crane', model: 'X2000', capacity: '50 tons' },
+    { type: locale === 'ar' ? 'كرين البرج' : 'Tower Crane', model: 'T500', capacity: '10 tons' },
+    { type: locale === 'ar' ? 'كرين الزاحف' : 'Crawler Crane', model: 'C300', capacity: '80 tons' },
+    { type: locale === 'ar' ? 'رافعة علوية' : 'Overhead Crane', model: 'O400', capacity: '20 tons' },
+    { type: locale === 'ar' ? 'كرين بوابة' : 'Gantry Crane', model: 'G250', capacity: '30 tons' },
+    { type: locale === 'ar' ? 'كرين ذاتي التركيب' : 'Self-Erecting Crane', model: 'S150', capacity: '15 tons' },
+  ];
+  const productsGraph = equipmentList.map(e => ({
+    '@type': 'Product',
+    name: `${e.type} ${e.model}`,
+    category: e.type,
+    description: locale === 'ar'
+      ? `معد ${e.type} ${e.model} بسعة تحمل ${e.capacity}`
+      : `${e.type} model ${e.model} suitable for heavy lifting up to ${e.capacity}`,
+    brand: { '@type': 'Brand', name: providerName },
+    offers: { '@type': 'Offer', priceCurrency: 'SAR', availability: 'https://schema.org/InStock' },
+  }));
+  const graphData = {
+    '@context': 'https://schema.org',
+    '@graph': [structuredData, ...servicesGraph, ...productsGraph],
+  };
+
   return (
     <>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify(structuredData),
+          __html: JSON.stringify(graphData),
         }}
       />
       <LocaleProvider locale={locale} messages={messages}>
