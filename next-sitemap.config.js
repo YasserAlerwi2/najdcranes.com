@@ -1,6 +1,6 @@
 /** @type {import('next-sitemap').IConfig} */
 module.exports = {
-  siteUrl: 'https://najdcranes.com',
+  siteUrl: 'https://www.najdcranes.com',
   generateRobotsTxt: true,
   changefreq: 'daily',
   priority: 0.7,
@@ -8,11 +8,11 @@ module.exports = {
   exclude: [],
   alternateRefs: [
     {
-      href: 'https://najdcranes.com/',
+      href: 'https://www.najdcranes.com/',
       hreflang: 'en',
     },
     {
-      href: 'https://najdcranes.com/ar/',
+      href: 'https://www.najdcranes.com/ar/',
       hreflang: 'ar',
     },
   ],
