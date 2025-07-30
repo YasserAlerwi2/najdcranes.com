@@ -32,7 +32,7 @@ export default function Header() {
 
   return (
     <header
-      className="bg-white shadow-lg sticky top-0 z-50"
+      className="bg-[#375f7c] shadow-lg sticky top-0 z-50"
       dir={locale === 'ar' ? 'ltr' : undefined}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -40,16 +40,16 @@ export default function Header() {
           {/* Logo */}
           <div className="flex-shrink-0">
             <Link href={`/${locale}`} className="flex items-center">
-              <div className="w-12 h-12 bg-gradient-to-br from-orange-500 to-orange-600 rounded-full flex items-center justify-center">
-                <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center">
-                  <Image src="/رفعات_نجد_الحديثه.png" alt="Najd Cranes logo" width={40} height={40} className="w-full h-full object-contain" priority />
+              <div className="w-20 h-20 flex items-center justify-center">
+                <div className="w-16 h-16 flex items-center justify-center">
+                  <Image src="/رفعات_نجد_الحديثه.png" alt="Najd Cranes logo" width={100} height={100} className="w-full h-full object-contain" priority />
                 </div>
               </div>
-              <div className="ml-3">
-                <div className="text-xl font-bold text-gray-900">
+              <div className="ml-0">
+                <div className="text-lg font-bold font-brand text-white">
                   {locale === 'ar' ? 'رافعات نجد الحديثة' : 'Modern Najd Cranes'}
                 </div>
-                <div className="text-sm text-gray-600">
+                <div className="text-sm text-white font-brand">
                   {locale === 'ar' ? 'MODERN NAJD CRANES' : 'رافعات نجد الحديثة'}
                 </div>
               </div>
@@ -63,7 +63,7 @@ export default function Header() {
                 key={item.name}
                 href={item.href}
                 className={cn(
-                  "text-gray-700 hover:text-orange-600 px-3 py-2 rounded-md text-sm font-medium transition-colors",
+                  "text-white hover:text-orange-300 px-3 py-2 rounded-md text-sm font-medium transition-colors",
                   pathname === item.href && "text-orange-600 bg-orange-50"
                 )}
               >
@@ -78,7 +78,7 @@ export default function Header() {
               variant="ghost"
               size="sm"
               onClick={toggleLanguage}
-              className="inline-flex items-center h-9 px-3 rounded-md border border-orange-600 text-orange-600 hover:bg-orange-50 transition-colors space-x-2"
+              className="inline-flex items-center h-9 px-3 rounded-md border border-white text-white hover:bg-white/20 transition-colors space-x-2"
             >
               <Globe className="h-4 w-4" />
               <span>{locale === 'ar' ? 'EN' : 'عربي'}</span>
@@ -86,7 +86,7 @@ export default function Header() {
             
             <a
               href="tel:+966555403290"
-              className="flex items-center space-x-2 text-orange-600 hover:text-orange-700"
+              className="flex items-center space-x-2 text-white hover:text-orange-300"
             >
               <Phone className="h-4 w-4" />
               <span className="text-sm font-medium">+966555403290</span>
@@ -107,7 +107,7 @@ export default function Header() {
           <div className="md:hidden">
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="text-gray-700 hover:text-orange-600 focus:outline-none focus:text-orange-600"
+              className="text-white hover:text-orange-300 focus:outline-none focus:text-orange-300"
             >
               {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
             </button>

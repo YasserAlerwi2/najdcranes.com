@@ -35,22 +35,22 @@ export default function Footer() {
   ];
 
   return (
-    <footer className="bg-gray-900 text-white">
+    <footer className="bg-[#a61e23] text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Company Info */}
           <div className="lg:col-span-1">
             <div className="flex items-center mb-6">
-              <div className="w-12 h-12 bg-gradient-to-br from-orange-500 to-orange-600 rounded-full flex items-center justify-center mr-3">
-                <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center">
-                  <Image src="/رفعات_نجد_الحديثه.png" alt="Najd Cranes logo" width={40} height={40} className="w-full h-full object-contain" priority />
+              <div className="flex items-center justify-center mr-0 ml-0">
+                <div className="w-24 h-24 flex items-center justify-center">
+                  <Image src="/رفعات_نجد_الحديثه.png" alt="Najd Cranes logo" width={96} height={96} className="w-full h-full object-contain" priority />
                 </div>
               </div>
               <div>
-                <div className="text-xl font-bold">
+                <div className="text-lg font-bold font-brand text-white">
                   {isArabic ? 'رافعات نجد الحديثة' : 'Modern Najd Cranes'}
                 </div>
-                <div className="text-sm text-gray-400">
+                <div className="text-xs text-gray-200 font-brand">
                   MODERN NAJD CRANES
                 </div>
               </div>

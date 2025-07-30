@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+
 
 import { useTranslations, useLocale } from '@/components/LocaleProvider';
 import { Phone, MessageCircle } from 'lucide-react';
@@ -10,24 +10,24 @@ import Image from 'next/image';
 export default function Hero() {
   const t = useTranslations('hero');
   const { locale } = useLocale();
-  const [current, setCurrent] = useState(0);
-  const images = ['/hero/hero1.jpg', '/hero/hero2.jpg', '/hero/hero3.jpg'];
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrent((prev) => (prev + 1) % images.length);
-    }, 5000);
-    return () => clearInterval(interval);
-  }, [images.length]);
+  
   const isArabic = locale === 'ar';
 
   return (
     <section className="relative min-h-[60vh] md:min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background Image */}
+      {/* Background Images */}
       <div 
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat md:hidden"
         style={{
-          backgroundImage: `url("${images[current]}")`,
+          backgroundImage: `url('/hero/hero1.png')`,
+          filter: 'brightness(0.8)'
+        }}
+      />
+      <div 
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat hidden md:block"
+        style={{
+          backgroundImage: `url('/hero/hero2.png')`,
           filter: 'brightness(0.8)'
         }}
       />
@@ -36,9 +36,9 @@ export default function Hero() {
       <div className="absolute inset-0 bg-gradient-to-r from-blue-900/20 to-orange-900/20" />
       
       {/* Content */}
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-12 pb-20 md:pt-32 md:pb-40 text-center">
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-56 pb-20 md:pt-72 md:pb-40 text-center">
         {/* Logo */}
-        <div className="mb-6 md:mb-8">
+        <div className="mb-6 md:mb-8 hidden">
           <div className="inline-flex items-center justify-center w-20 h-20 md:w-24 md:h-24 bg-gradient-to-br from-orange-500 to-orange-600 rounded-full mb-3 md:mb-4">
             <div className="w-16 h-16 md:w-20 md:h-20 bg-white rounded-full flex items-center justify-center">
               <Image src="/رفعات_نجد_الحديثه.png" alt="تأجير_رافعات_تأجير_معدات_ثقيلة_رافعة_مان_ليفت_سيزر_ليفت_بوم_ترك_تيليهاندلر_خدمات_رفع،_إيجار_معدات_البناء،_شركة_رافعات_في_السعودية_رافعات_نجد_الحديثه_مشاريع_لافعات_نجد" width={96} height={96} className="w-full h-full object-contain" priority />
