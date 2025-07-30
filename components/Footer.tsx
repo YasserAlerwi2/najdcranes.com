@@ -5,6 +5,7 @@ import Link from 'next/link';
 import { Phone, Mail, MapPin, Facebook, Twitter, Instagram, Linkedin } from 'lucide-react';
 
 import Image from 'next/image';
+import { cn } from '@/lib/utils';
 
 export default function Footer() {
   const t = useTranslations('footer');
@@ -50,13 +51,13 @@ export default function Footer() {
                 <div className="text-lg font-bold font-brand text-white">
                   {isArabic ? 'رافعات نجد الحديثة' : 'Modern Najd Cranes'}
                 </div>
-                <div className="text-xs text-gray-200 font-brand">
-                  MODERN NAJD CRANES
+                <div className={cn("font-brand", isArabic ? "text-lg text-white" : "text-lg text-white")}>
+                  {isArabic ? 'MODERN NAJD CRANES' : 'رافعات نجد الحديثة' }
                 </div>
               </div>
             </div>
             
-            <p className="text-gray-300 mb-6 leading-relaxed">
+            <p className="text-white mb-6 leading-relaxed">
               {t('description')}
             </p>
 
@@ -83,7 +84,7 @@ export default function Footer() {
                 <li key={index}>
                   <Link
                     href={link.href}
-                    className="text-gray-300 hover:text-orange-400 transition-colors"
+                    className="text-white hover:text-orange-400 transition-colors"
                   >
                     {link.name}
                   </Link>
@@ -100,7 +101,7 @@ export default function Footer() {
                 <li key={index}>
                   <Link
                     href={service.href}
-                    className="text-gray-300 hover:text-orange-400 transition-colors"
+                    className="text-white hover:text-orange-400 transition-colors"
                   >
                     {service.name}
                   </Link>
@@ -115,7 +116,7 @@ export default function Footer() {
             <div className="space-y-4">
               <a href="https://maps.app.goo.gl/h4t8iC3NUdnt8nQV9?g_st=iwb" target="_blank" rel="noopener noreferrer" className="flex items-start space-x-3 hover:text-orange-400">
                 <MapPin className="h-5 w-5 text-orange-400 mt-1 flex-shrink-0" />
-                <span className="text-gray-300">
+                <span className="text-white">
                   {isArabic ? 'جدة المملكة العربية السعودية' : 'Jeddah, Saudi Arabia'}
                 </span>
               </a>
@@ -124,7 +125,7 @@ export default function Footer() {
                 <Phone className="h-5 w-5 text-orange-400 flex-shrink-0" />
                 <a
                   href="tel:+966555403290"
-                  className="text-gray-300 hover:text-orange-400 transition-colors"
+                  className="text-white hover:text-orange-400 transition-colors"
                 >
                   +966 56 881 0306
                 </a>
@@ -134,7 +135,7 @@ export default function Footer() {
                 <Phone className="h-5 w-5 text-orange-400 flex-shrink-0" />
                 <a
                   href="tel:+966555403290"
-                  className="text-gray-300 hover:text-orange-400 transition-colors"
+                  className="text-white hover:text-orange-400 transition-colors"
                 >
                   +966 55 540 3290
                 </a>
@@ -144,7 +145,7 @@ export default function Footer() {
                 <Mail className="h-5 w-5 text-orange-400 flex-shrink-0" />
                 <a
                   href="mailto:m.c.najd.est@gmail.com"
-                  className="text-gray-300 hover:text-orange-400 transition-colors"
+                  className="text-white hover:text-orange-400 transition-colors"
                 >
                   m.c.najd.est@gmail.com
                 </a>
@@ -156,10 +157,10 @@ export default function Footer() {
               <h4 className="font-semibold text-orange-400 mb-2">
                 {isArabic ? 'ساعات العمل' : 'Working Hours'}
               </h4>
-              <p className="text-sm text-gray-300">
+              <p className="text-sm text-white">
                 {isArabic ? 'الأحد - الخميس' : 'Sunday - Thursday'}
               </p>
-              <p className="text-sm text-gray-300">
+              <p className="text-sm text-white">
                 7:00 AM - 6:00 PM
               </p>
             </div>
@@ -169,18 +170,18 @@ export default function Footer() {
         {/* Bottom Bar */}
         <div className="border-t border-gray-800 mt-12 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
-            <div className="text-gray-400 text-sm mb-4 md:mb-0">
+            <div className="text-white text-sm mb-4 md:mb-0">
               © 2025 {isArabic ? 'رافعات نجد الحديثة' : 'Modern Najd Cranes'}. {t('rights')}
             </div>    
-           <div className="text-gray-400 text-sm mb-4 md:mb-0">
+           <div className="text-white text-sm mb-4 md:mb-0">
               {isArabic ? 'تم تطويره بواسطة ياسر العروي' : 'Developed by Yasser Alerwi'}
             </div>
             
             <div className="flex space-x-6 text-sm">
-              <Link href={`/${locale}/privacy`} className="text-gray-400 hover:text-orange-400 transition-colors">
+              <Link href={`/${locale}/privacy`} className="text-white hover:text-orange-400 transition-colors">
                 {isArabic ? 'سياسة الخصوصية' : 'Privacy Policy'}
               </Link>
-              <Link href={`/${locale}/terms`} className="text-gray-400 hover:text-orange-400 transition-colors">
+              <Link href={`/${locale}/terms`} className="text-white hover:text-orange-400 transition-colors">
                 {isArabic ? 'الشروط والأحكام' : 'Terms & Conditions'}
               </Link>
             </div>
