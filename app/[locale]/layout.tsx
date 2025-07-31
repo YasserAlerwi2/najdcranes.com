@@ -24,8 +24,14 @@ export async function generateMetadata({ params }: Props) {
       description: locale === 'ar' 
         ? 'شركة نجد للرافعات الحديثة - رائدة في مجال خدمات الرافعات والمعدات الثقيلة في المملكة العربية السعودية'
         : 'Modern Najd Cranes Company - Leading provider of crane services and heavy equipment in Saudi Arabia',
-      locale: locale,
+      locale,
       type: 'website',
+      images: '/hero/hero1.png',
+
+    },
+    twitter: {
+      card: 'summary_large_image',
+      images: '/hero/hero1.png',
     },
     alternates: {
       canonical: `/${locale}`,

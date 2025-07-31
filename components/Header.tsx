@@ -47,7 +47,7 @@ export default function Header() {
               </div>
               <div className="ml-0">
                 <div className="font-thin font-brand text-white text-xl">
-                  {'رافعات نجـد الحـديـثـة'}
+                  {'رافـعات نجـد الحـديـثـة'}
                 </div>
                 <div className="font-brand text-white text-lg">
                   {'MODERN NAJD CRANES'}
