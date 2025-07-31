@@ -48,11 +48,11 @@ export default function Footer() {
                 </div>
               </div>
               <div>
-                <div className="text-lg font-bold font-brand text-white">
-                  {isArabic ? 'رافعات نجد الحديثة' : 'Modern Najd Cranes'}
+                <div className="font-thin font-brand text-white text-xl">
+                  {'رافعات نجـد الحـديـثـة'}
                 </div>
-                <div className={cn("font-brand", isArabic ? "text-lg text-white" : "text-lg text-white")}>
-                  {isArabic ? 'MODERN NAJD CRANES' : 'رافعات نجد الحديثة' }
+                <div className="font-brand text-white text-lg">
+                  {'MODERN NAJD CRANES'}
                 </div>
               </div>
             </div>
@@ -171,7 +171,7 @@ export default function Footer() {
         <div className="border-t border-gray-800 mt-12 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="text-white text-sm mb-4 md:mb-0">
-              © 2025 {isArabic ? 'رافعات نجد الحديثة' : 'Modern Najd Cranes'}. {t('rights')}
+              © 2025 {isArabic ? 'رافعات نجد الحـديثة' : 'Modern Najd Cranes'}. {t('rights')}
             </div>    
            <div className="text-white text-sm mb-4 md:mb-0">
               {isArabic ? 'تم تطويره بواسطة ياسر العروي' : 'Developed by Yasser Alerwi'}

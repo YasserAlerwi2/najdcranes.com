@@ -46,11 +46,11 @@ export default function Header() {
                 </div>
               </div>
               <div className="ml-0">
-                <div className="text-lg font-bold font-brand text-white">
-                  {locale === 'ar' ? 'رافعات نجد الحديثة' : 'Modern Najd Cranes'}
+                <div className="font-thin font-brand text-white text-xl">
+                  {'رافعات نجـد الحـديـثـة'}
                 </div>
-                <div className="text-sm text-white font-brand">
-                  {locale === 'ar' ? 'MODERN NAJD CRANES' : 'رافعات نجد الحديثة'}
+                <div className="font-brand text-white text-lg">
+                  {'MODERN NAJD CRANES'}
                 </div>
               </div>
             </Link>
