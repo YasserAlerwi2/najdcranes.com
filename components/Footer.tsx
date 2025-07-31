@@ -48,10 +48,10 @@ export default function Footer() {
                 </div>
               </div>
               <div>
-                <div className="font-thin font-brand text-white text-xl">
+                <div className="font-bold font-brand text-white text-xl">
                   {'رافعات نجـد الحـديـثـة'}
                 </div>
-                <div className="font-brand text-white text-lg">
+                <div className="font-bold font-brand text-white text-lg">
                   {'MODERN NAJD CRANES'}
                 </div>
               </div>
